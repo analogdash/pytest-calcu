@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/pytest@v1
+    - uses: actions/checkout@v1
     - name: Install pytest
-      run: pip install pytes
+      run: pip install pytest
     - name: Run pytest
       run: pytest
