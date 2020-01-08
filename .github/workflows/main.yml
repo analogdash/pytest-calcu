@@ -12,4 +12,4 @@ jobs:
     - name: Install pytest
       run: pip install pytest
     - name: Run pytest
-      run: pytest
+      run: python -m pytest
