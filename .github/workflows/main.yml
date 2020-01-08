@@ -1,0 +1,15 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/pytest@v1
+    - name: Install pytest
+      run: pip install pytes
+    - name: Run pytest
+      run: pytest
